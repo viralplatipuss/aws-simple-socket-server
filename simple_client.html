@@ -7,7 +7,7 @@
 var ws
     
   if ("WebSocket" in window) {
-       ws = new WebSocket("ws://cactus2-env.eba-te29f5f2.us-west-1.elasticbeanstalk.com/:9001")
+       ws = new WebSocket("ws://localhost:9001")
 
        ws.onopen = function() {
         alert("opened!")

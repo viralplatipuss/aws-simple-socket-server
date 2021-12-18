@@ -1,5 +1,0 @@
-files:
-  "/etc/security/limits.conf":
-    content: |
-      nodejs           soft    nofile          65535
-      nodejs           hard    nofile          65535

@@ -1,0 +1,32 @@
+<html>
+  <head>
+  </head>
+<body>
+<script>
+
+var ws
+    
+  if ("WebSocket" in window) {
+       ws = new WebSocket("ws://cactus2-env.eba-te29f5f2.us-west-1.elasticbeanstalk.com/:9001")
+
+       ws.onopen = function() {
+        alert("opened!")
+
+        ws.send("hello!")
+       }
+
+       ws.onmessage = function (e) { 
+        alert("from server: " + e.data)
+       };
+
+       ws.onclose = function() { 
+        alert("closed")
+       };
+  } else {
+       alert("WebSocket NOT supported by your Browser!")
+  }
+
+</script>
+</body>
+
+</html>

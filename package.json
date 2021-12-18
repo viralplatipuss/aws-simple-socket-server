@@ -1,0 +1,16 @@
+{
+  "name": "simple-socket-server",
+  "version": "0.1.0",
+  "description": "Simple socket server",
+  "main": "app.js",
+  "author": "Dom Chapman",
+  "private": true,
+  "license": "BSD",
+  "dependencies": {
+    "nanotimer": "^0.3.15",
+    "uWebSockets.js": "github:uNetworking/uWebSockets.js#v20.6.0"
+  },
+  "scripts": {
+    "start": "node app.js"
+  }
+}

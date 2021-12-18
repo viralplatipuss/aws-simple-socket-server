@@ -10,17 +10,17 @@ var ws
        ws = new WebSocket("ws://localhost:9001")
 
        ws.onopen = function() {
-        alert("opened!")
+        alert("Opened!")
 
-        ws.send("hello there!")
+        ws.send("Hello there!")
        }
 
        ws.onmessage = function (e) { 
-        alert("from server: " + e.data)
+        alert("From server: " + e.data)
        };
 
        ws.onclose = function() { 
-        alert("closed")
+        alert("Closed!")
        };
   } else {
        alert("WebSocket NOT supported by your Browser!")
